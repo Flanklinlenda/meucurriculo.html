@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flanklin A. M Fernandes</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#experiencia">Experiência Profissional</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Casado, 42 anos.</p>
+        </section>
+
+        <section id="educacao">
+            <h2>Educação</h2>
+            <p>Superior em Marketing Digital.</p>
+            <p>Técnico em Eletroeletrônica e Telecomunicações.</p>
+            <p>Cursando Técnico em Informática.</p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <p>Técnico em laboratórios na FEPI de 2013 a 2016.</p>
+            <p>Professor de áreas técnicas na rede pública de ensino.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <p>Liderança, comunicativo e proativo.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: magiicosdeker@hotmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Currículo</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Flanklin Augusto Martins Fernandes</title>
+    <style>
+        /* Estilos CSS permanecem os mesmos */
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Conteúdo do cabeçalho permanece o mesmo -->
+    </header>
+
+    <section>
+        <!-- Conteúdo das seções permanecem o mesmo -->
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <!-- Conteúdo do rodapé permanece o mesmo -->
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Obter os valores dos campos do formulário
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Construir o corpo do e-mail
+            var body = "Nome: " + name + "\n";
+            body += "E-mail: " + email + "\n";
+            body += "Mensagem: " + message;
+
+            // Redirecionar para o e-mail desejado
+            window.location.href = "mailto:magicosdeker@hotmail.com?subject=Contato%20do%20Currículo&body=" + encodeURIComponent(body);
+        });
+    </script>
+
+</body>
+</html>
